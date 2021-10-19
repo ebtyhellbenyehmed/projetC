@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include"fonction.h"
 int main(){
 int a;
 int b;
@@ -8,8 +9,8 @@ do{
 printf("\nsaisie du second nombre:");
 scanf("%d",&b);
 }while(b==0);
-printf("%d+%d=%d",a,b,a+b);
-printf("%d-%d=%d",a,b,a-b);
-printf("%d/%d=%f\n",a,b, (float)a/b);
+printf("%d + %d = %d",a, b, sommer(a,b));
+printf("%d - %d = %d",a, b, a-b);
+printf("%d / %d = %d\n",a, b, a/b);
 return(0);
 }
